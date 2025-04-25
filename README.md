@@ -106,3 +106,14 @@ Scikit-learn
 XGBoost
 
 Jupyter Notebook
+
+## 🔄 Load Trained Model
+
+The trained XGBoost model (`final_xgb_model.pkl`) is included in this repo.  
+You can load and use it as follows:
+
+```python
+import pickle
+
+with open('final_xgb_model.pkl', 'rb') as f:
+    loaded_model = pickle.load(f)
